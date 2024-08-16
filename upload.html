@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('{{ url_for('static', filename='/images/bg.jpg') }}') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color:rgb(255, 255, 255) ;
+            color: #00796b;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .header img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .header h1 {
+            flex: 1;
+            text-align: center;
+            margin: 0;
+        }
+
+        .intro-text {
+            margin-bottom: 90px;
+            margin-left: 200px;  /* Adjust margins as needed */
+            margin-right: 200px;
+            padding-left: 200px;  /* Adjust padding as needed */
+            padding-right: 200px;
+            font-size: 1.2em;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 600px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary {
+            background-color: #00bcd4;
+            border-color: #00bcd4;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0097a7;
+            border-color: #0097a7;
+        }
+
+        .alert {
+            margin-top: 20px;
+        }
+
+        .file-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            background: #dcedc8;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .file-name {
+            font-weight: bold;
+            color: #004d40;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .remove-file {
+            cursor: pointer;
+            color: #d32f2f;
+            margin-left: 10px;
+            font-size: 1.2em;
+        }
+
+        .error-message {
+            color: #d32f2f;
+            font-size: 0.9em;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .form-label {
+            font-size: 1.1em;
+            color: #00796b;
+        }
+
+        .form-control {
+            border-color: #004d40;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: #00bcd4;
+            box-shadow: 0 0 0 0.2rem rgba(0, 188, 212, 0.25);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        <h1>Resume Analyzer</h1>
+    </div>
+
+    <p class="intro-text">Discover job opportunities that match your resume with our Resume Analyzer. Get personalized job recommendations based on your skills and experience.</p>
+
+    <div class="container">
+        <!-- Flash Messages -->
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <div class="alert alert-info" role="alert">
+            {{ messages[0] }}
+        </div>
+        {% endif %}
+        {% endwith %}
+
+        <!-- Upload Form -->
+        <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data" id="uploadForm">
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Upload Your Resume</label>
+                <input class="form-control" type="file" id="formFile" name="file" required>
+                <div class="error-message" id="errorMessage">This format is not allowed. Only DOC and PDF are allowed.</div>
+            </div>
+            <div class="file-info" id="fileInfo" style="display:none;">
+                <span class="file-name" id="fileName"></span>
+                <span class="remove-file" id="removeFile">&times;</span>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitBtn" disabled>Upload</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const formFile = document.getElementById('formFile');
+        const fileInfo = document.getElementById('fileInfo');
+        const fileName = document.getElementById('fileName');
+        const removeFile = document.getElementById('removeFile');
+        const submitBtn = document.getElementById('submitBtn');
+        const errorMessage = document.getElementById('errorMessage');
+
+        formFile.addEventListener('change', function () {
+            const file = formFile.files[0];
+            const allowedExtensions = ['pdf', 'doc', 'docx'];
+            const fileExtension = file.name.split('.').pop().toLowerCase();
+
+            if (allowedExtensions.includes(fileExtension)) {
+                fileName.textContent = file.name;
+                fileInfo.style.display = 'flex';
+                errorMessage.style.display = 'none';
+                submitBtn.disabled = false;
+            } else {
+                errorMessage.style.display = 'block';
+                formFile.value = '';  // Clear the input
+                fileInfo.style.display = 'none';
+                submitBtn.disabled = true;
+            }
+        });
+
+        fileName.addEventListener('click', function () {
+            const file = formFile.files[0];
+            if (file) {
+                const fileUrl = URL.createObjectURL(file);
+                window.open(fileUrl, '_blank');
+            }
+        });
+
+        removeFile.addEventListener('click', function () {
+            formFile.value = '';
+            fileInfo.style.display = 'none';
+            errorMessage.style.display = 'none';
+            submitBtn.disabled = true;
+        });
+    </script>
+</body>
+
+</html>
