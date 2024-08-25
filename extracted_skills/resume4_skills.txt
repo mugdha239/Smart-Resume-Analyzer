@@ -1,0 +1,1 @@
+Data Analytics PROJECT Data Visualization Digital Analytics Association (DAA) Microsoft SQL Microsoft Power BI Member Tableau Led Gender and Age detection project leveraging data Python and R from organizational membership and associated websites Created a Python application that predicts the age and gender of a site visitor based on a single image
