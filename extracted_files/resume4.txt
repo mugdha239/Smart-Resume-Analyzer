@@ -1,0 +1,59 @@
+TOMISLAV ABRAMOVIC
+Junior Data Analyst
+tomislav.abram@email.com (123) 456-7890 Sausalito, CA
+LinkedIn Twitter
+WORK EXPERIENCE CAREER
+Junior Data Analyst OBJECTIVE
+Sunbit
+Highly educated, innovative, and
+July 2020 - current San Francisco, CA motivated data analysis
+Designed over 310 ad hoc queries with SQL in Cognos professional with a wealth of
+ReportNet, examined reports, and presented findings in knowledge. Seeking a challenging
+PowerPoint and Excel and career-advancing position as a
+junior data analyst with Tech Firefly.
+Built 140 complex SQL reports to audit $2.5M of pay and
+benefits for over 1,300 employees
+Reengineered standard operational procedures that
+improved 22 functional areas and data management EDUCATION
+Maintained reports with a 98% on-time delivery
+Bachelor's of Science
+Facilitated data distribution, file sharing, and report
+Computer Science
+tracking for over 4,000 files with SharePoint
+University of San Francisco
+Data Analyst Internship 2016 - 2020
+San Francisco, CA
+DoorDash
+GPA: 4.0
+October 2019 - May 2020 San Francisco, CA
+Awards
+Performed advanced analytics functions, including data
+modeling and prescriptive analytics 2020 - Pedro Arrupe Award for
+Utilized techniques and business intelligence (Power BI) to rising seniors (Mission Council,
+create 24 dashboards and 35 ad hoc reports to address Office of the President)
+business problems and streamline processes
+Supported 16 T-SQL / VBA applications and tools
+SKILLS
+Data Analytics
+PROJECT
+Data Visualization
+Digital Analytics Association (DAA) Microsoft SQL
+Microsoft Power BI
+Member
+Tableau
+Led Gender and Age detection project leveraging data
+Python and R
+from organizational membership and associated websites
+Created a Python application that predicts the age and
+gender of a site visitor based on a single image
+CERTIFICATIONS
+Used computer vision tools to recognize digital images
+and Deep Learning to determine age and gender based
+Google Data Analytics
+on facial characteristics
+Professional
+Published applications including AI algorithms that
+Associate Certified Analytics
+accounted for makeup, facial expressions, lighting, and
+Professional (aCAP)
+obstructions in gender and age detection

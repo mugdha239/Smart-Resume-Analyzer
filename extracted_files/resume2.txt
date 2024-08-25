@@ -1,0 +1,62 @@
+DEREK SOTO CAREER OBJECTIVE
+Organized, communicative, and quick-to-learn recent computer
+Data Analyst
+science graduate with 1 year of valuable internship experience.
+Seeking an opportunity as a data analyst to contribute to
+Desoto@email.com Vizance's data conversions and process improvements.
+(123) 456-7890
+Brooklyn, NY
+WORK EXPERIENCE
+LinkedIn
+Market Research Analyst Intern
+Prudential
+EDUCATION
+April 2019 - March 2020 Pittsburgh, PA
+B.S. Received, cleaned, and prepped data using Python, SQL, and
+Excel to help build marketing mix models that resulted in a
+Computer Science
+lift in ROI of 8 basis points
+University of Pittsburgh
+Built data visualizations using Tableau for KPIs that reduced
+September 2016 - April 2020 manual reporting by 10 hours weekly
+Pittsburgh, PA Using Excel and SQL, built calculator for a client to help
+GPA: 3.7 them prioritize their project roadmap by changing inputs
+like customer LTV, conversion rate, and organic traffic
+Relevant courses
+Collaborated with product managers, gaining insight into
+Intermediate programming
+marketing aspects and writing documents
+Probability & Statistics
+Identified strategic marketing opportunity through detailed
+Linear Algebra
+analysis with intern team, making recommendations that
+Game Theory saved the client over $11K in yearly campaign costs
+Contributed to weekly and monthly reports on product
+development and design
+SKILLS
+Worked with 4 interns to conduct an attitude study, which
+Programming: SQL, Python led current clients to purchase products 13% more often
+(Pandas, scikit-learn)
+A/B Testing and
+PROJECTS
+Experimentation
+Modeling: Linear and
+Fantasy Football Modeling
+Logistic Regressions
+Aggregated and prepped 6 years of NFL fantasy football
+Data Visualization: Excel,
+projection data from 8 independent sources into MySQL
+Google Sheets, Matplotlib,
+database, which improved winning streak by 78%
+Tableau
+Built a random forest model in scikit-learn that combined
+disparate sources into one projection that outperformed the
+mean absolute error of the next best projection by 14%
+Movie Recommendation Engine
+Prepped IMDB and Rotten Tomatoes data and used k-
+nearest-neighbors in scikit-learn to build an improved movie
+recommendation system
+Saved an average of 17 minutes on movie selection relative
+to previous methodology
+Built visualizations in Tableau to show how ratings changed
+and how the model performed over time

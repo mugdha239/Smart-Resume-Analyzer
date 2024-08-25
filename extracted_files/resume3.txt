@@ -1,0 +1,52 @@
+DIEGO PEREZ CAREER OBJECTIVE
+With prior experience in data analytics and knowledge in MySQL, SAS,
+Data Analyst Intern
+and Python, I'm seeking a data analyst internship at Thomson
+Reuters. Eager to combine my strong technical skills and appreciation
+diego.perez@email.com for journalism to contribute to the company's position as a trusted
+source of information.
+(123) 456-7890
+Ann Arbor, MI
+LinkedIn WORK EXPERIENCE
+Waiter
+EDUCATION Zingerman's Deli
+January 2021 - current Ann Arbor, MI
+B.S.
+Received positive feedback on customer surveys for friendliness
+Data Science
+and efficiency to help boost repeat customers by 17%
+University of Michigan
+Trained 5 new waitstaff, contributing to a 27% increase in overall
+August 2020 - current team efficiency
+Ann Arbor, MI Maintained a complaint resolution rate of 93% by resolving
+customer complaints promptly and effectively
+Ensured cleanliness and hygiene of the dining area, leading to a
+SKILLS consistently high health inspection score
+MySQL
+Tableau PROJECTS
+SAS
+TravelTrack
+Python
+Amazon Web Services (AWS) Travel Data Analyst
+March 2022 - current
+Helped users understand and improve their travel trends by
+HOBBIES
+using Tableau to create visually engaging dashboards
+Open-source contributions Developed machine learning models to predict future travel
+Dashboard development spending and increased forecast accuracy by 31%
+Information design Used Python to automate routine data processing tasks that
+saved an estimated 20 hours of manual work per week
+Improved service quality via a SAS-based advanced data model
+that identified key factors affecting customer satisfaction
+Recomendify
+Project Manager
+January 2021 - February 2022
+Led a team of 10 classmates to successfully develop and launch
+the Recomendify engine that improves product
+recommendations
+Implemented Agile project management methodologies,
+resulting in a 34% increase in project delivery speed
+Facilitated communication between technical and non-technical
+stakeholders to improve project understanding and alignment
+Enhanced project tracking and reduced project overruns by
+employing Tableau to visualize project timelines and resources
